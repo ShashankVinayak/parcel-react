@@ -1,16 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import '../css/index.css';
+import App from './App';
 
-const user = {
-    firstname: 'Shashank',
-    lastname: 'Vinayak'
-};
-
-const element = (
-    <div>
-        <p>FirstName: {user.firstname}</p>
-        <p>LastName: {user.lastname}</p>
-    </div>
-);
-
-ReactDOM.render(element, document.getElementById('app'));
+/* Renders the react app */
+ReactDOM.render(<App value="I am a prop!" />, document.getElementById('app'));
